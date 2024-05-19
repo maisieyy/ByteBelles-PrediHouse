@@ -43,7 +43,6 @@ body {
 /* HERO */
 .hero {
   padding: 50px 0;
-  margin-top: 60px;
 }
 
 .hero .top-blur {
@@ -61,15 +60,17 @@ body {
 }
 
 .hero .text h1 {
-  font-size: 48px;
-  font-weight: 550;
+  font-size: 39px;
+  font-weight: 700;
   margin-bottom: 30px;
+  margin-top: 80px;
 }
 
 .hero .text p {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 30px;
+  line-height: 25px;
 }
 
 .btn {
@@ -99,6 +100,10 @@ body {
   }
 }
 
+.hero .img-fluid {
+  margin-left: 30px;
+}
+
 /* RESPONSIVE MOBILE */
 @media (max-width: 576px) {
   .hero {
@@ -109,8 +114,9 @@ body {
     font-size: 35px;
   }
 
-  .hero .home-1 {
+  .hero .img-fluid {
     margin-top: -10px;
+    margin-left: -3px;
   }
 }
 
@@ -179,7 +185,7 @@ body {
 
 .service .center-blur {
   background: linear-gradient(90deg, #e29f8e, #be5adf, #725ce3);
-  filter: blur(110px);
+  filter: blur(150px);
   width: 55vw;
   height: 30vw;
   min-width: 190px;
@@ -390,8 +396,8 @@ body {
 }
 
 .predict .text h1 {
-  font-weight: 600;
-  font-size: 48px;
+  font-weight: 700;
+  font-size: 38px;
   margin-top: -40px;
   margin-bottom: 30px;
 }
@@ -400,6 +406,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 30px;
+  line-height: 25px;
 }
 
 /* RESPONSIVE MOBILE */
@@ -449,11 +456,13 @@ body {
 .form-predict .text-center h2 {
   padding-bottom: 40px;
   font-size: 33px;
+  line-height: 45px;
+  font-weight: 600;
 }
 
 .form-floating .form-control {
   background: none;
-  border: 1px solid #6844c8;
+  border: 1.5px solid #6844c8;
   color: white;
   font-size: 16px;
   padding-top: 40px;
@@ -463,18 +472,21 @@ body {
 
 .form-floating .form-control:focus {
   box-shadow: none;
-  border-bottom: 3px solid #6844c8;
+  border-bottom: 3.5px solid #6844c8;
   padding-left: 20px;
 }
 
 .form-floating .form-control ~ label {
   margin-left: 20px;
+  opacity: 0.5;
+  font-weight: 300;
 }
 
 .form-floating .form-control:focus + label {
   font-weight: 600;
   color: #6844c8;
   margin-top: -20px;
+  opacity: 1;
 }
 
 .form-floating .form-control:focus ~ label {
@@ -544,10 +556,25 @@ body {
   font-weight: 550;
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .about-body p {
   line-height: 30px;
+}
+
+.about-ph .top-blur {
+  background: linear-gradient(250deg, #725ce3 33%, #e29f8e 33%, #be5adf);
+  border-radius: 81% 19% 78% 22% / 76% 18% 82% 24%;
+  filter: blur(230px);
+  width: 55vw;
+  height: 45vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: 0;
+  right: 15vw;
+  position: absolute;
+  z-index: -1;
 }
 
 /* RESPONSIVE TABLET */
@@ -557,7 +584,12 @@ body {
   }
 
   .about-body h5 {
-    text-align: center;
+    margin-top: 30px;
+  }
+
+  .about-ph .img-fluid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -566,8 +598,12 @@ body {
     margin-left: -30px;
   }
 
+  .about-ph h1 {
+    font-size: 35px;
+  }
+
   .about-body h5 {
-    text-align: center;
+    margin-top: 30px;
   }
 }
 
@@ -578,7 +614,7 @@ body {
   margin-top: 130px;
 }
 
-.team .h2 {
+.team h2 {
   font-weight: 600;
   font-size: 48px;
 }
@@ -616,7 +652,18 @@ body {
 }
 
 /* RESPONSIVE TABLET */
-@media (max-width) {
+@media (max-width: 576px) {
+  .team {
+    margin-top: 100px;
+  }
+
+  .team h2 {
+    font-size: 35px;
+  }
+
+  .team .card-body p {
+    padding-top: 15px;
+  }
 }
 
 /* =============================================== */
@@ -627,7 +674,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: white;
-  width: 95%;
+  width: 97%;
   bottom: 0;
   background: #6844c8;
   padding: 50px 0 30px;
