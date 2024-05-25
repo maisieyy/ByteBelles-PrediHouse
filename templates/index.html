@@ -1,133 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/style.css" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <!-- LOGO -->
-    <link rel="shortcut icon" type="predi-icon" href="/static/images/logo-1.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css" />
 
-    <title>PrediHouse</title>
-  </head>
-  <body>
+  <!-- LOGO -->
+  <link rel="shortcut icon" type="predi-icon" href="/static/images/logo-1.png">
 
-    <!-- NAVBAR SECTION -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">PrediHouse</a>
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb- mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/templates/predict.html">Prediction</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/templates/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
-              </li>
-            </ul>
+  <title>PrediHouse</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR SECTION -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/static/images/logo-3.png" style="height: 35px; margin-top: -10px;">
+          PrediHouse.</a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb- mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#predict">Prediction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-ph">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div class="hero" id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-center text-lg-start">
+          <div class="text">
+            <h1 class="text-white">Dapatkan harga <br>terbaik saat menjual <br> rumah Anda!</h1>
+            <p class="text-white">Tidak yakin dengan harga rumah? Algoritme canggih kami memprediksi harga yang akurat
+              dan menawarkan rekomendasi yang dipersonalisasi untuk pembeli dan penjual.</p>
+            <p><a href="#form-predict" class="btn btn-secondary me-2">Get Started</a><a href="#hiw"
+                class="btn btn-white-outline">Learn More</a></p>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-    <div class="hero">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5 text-center text-lg-start">
-            <div class="text">
-              <h1 class="text-white">Di mana impian <br>rumah Anda diprediksi </span><span>menjadi kenyataan!</span></h1>
-              <p class="text-white">Tidak yakin dengan harga rumah? Algoritme canggih kami memprediksi harga yang akurat dan menawarkan rekomendasi yang dipersonalisasi untuk pembeli dan penjual.</p>
-              <p><a href="/templates/predict.html" class="btn btn-secondary me-2">Get Started</a><a href="#hiw" class="btn btn-white-outline">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="home-1">
-              <img src="/static/images/home-3.png" alt="" class="img-fluid" />
-            </div>
+        <div class="col-lg-7">
+          <div class="home-1">
+            <img src="/static/images/home-3.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
-      <div class="top-blur"></div>
     </div>
+    <div class="top-blur"></div>
+  </div>
 
-    <!-- SERVICE SECTION -->
-    <section class="service" id="service">
+  <!-- ABOUT SECTION -->
+  <section class="about-ph" id="about-ph">
+    <div class="container">
+      <div class="text-center text-white">
+        <h1>About <span>PrediHouse</span>: <br>Intriguing Prediction Insights</h1>
+      </div>
+
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+        <div class="col-12 col-lg-6">
+          <img src="/static/images/home-5.png" class="img-fluid logo-2" alt="">
+          <!-- <h1 class="predi-text text-white text-center position-absolute bottom-20 start-100 translate-middle-x mb-2">PrediHouse.</h1> -->
+        </div>
+
+        <div class="col-lg-6">
+          <div class="about-body text-white">
+            <h5 class="slogan">Memprediksi Masa Depan Rumah Anda, Merekomendasikan Impian Anda</h5>
+            <p class="describe">PrediHouse adalah situs web yang menggunakan pembelajaran mesin untuk memprediksi harga
+              rumah dan merekomendasikan properti berdasarkan preferensi pengguna. Situs ini memungkinkan pengguna untuk
+              memasukkan kriteria seperti lokasi, harga, dan fitur, dan menggunakan algoritma untuk menyarankan properti
+              yang cocok. Tujuannya adalah untuk memberikan informasi yang berguna untuk keputusan pembelian. Situs web
+              ini memiliki antarmuka yang ramah pengguna untuk memudahkan navigasi dan pengambilan keputusan, yang
+              bertujuan untuk membantu pengguna membuat pilihan yang tepat saat mencari rumah impian Anda.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="left-blur"></div>
+      <div class="center-blur"></div>
+      <div class="right-blur"></div>
+  </section>
+
+  <!-- SERVICE SECTION -->
+  <section class="service" id="service">
     <div class="container py-5">
       <h2 class="text-center">Discover Our <br>Range of Services</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4 py-5 text-center">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-1.png" class="img-fluid" alt="">
               <h5 class="card-title">Accurate Predictions</h5>
-              <p class="card-text">Model machine learning kami menganalisis berbagai faktor seperti lokasi, ukuran, fasilitas, dan tren pasar untuk memberikan prediksi harga rumah yang tepat bagi Anda.</p>
+              <p class="card-text">Model machine learning kami menganalisis berbagai faktor seperti lokasi, ukuran,
+                fasilitas, dan tren pasar untuk memberikan prediksi harga rumah yang tepat bagi Anda.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-2.png" class="img-fluid" alt="">
               <h5 class="card-title">Custom Recommendations</h5>
-              <p class="card-text">Berdasarkan preferensi dan kebutuhan Anda, sistem kami menghasilkan rekomendasi khusus untuk membantu Anda menemukan rumah yang sesuai dengan anggaran Anda.</p>
+              <p class="card-text">Berdasarkan preferensi dan kebutuhan, sistem kami menghasilkan rekomendasi khusus
+                untuk membantu menemukan rumah yang sesuai dengan anggaran Anda.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-3.png" class="img-fluid" alt="">
               <h5 class="card-title">Market Intelligence</h5>
-              <p class="card-text">Dapatkan informasi terkini tentang tren dan perkembangan terbaru di pasar real estat melalui artikel dan analisis mendalam kami yang terperinci, terkini, dan up-to-date.</p>
+              <p class="card-text">
+                Dapatkan informasi terbaru tentang tren dan perkembangan terkini di pasar real estat melalui artikel dan
+                analisis mendalam kami yang terperinci, selalu update, dan informatif.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-4.png" class="img-fluid" alt="">
               <h5 class="card-title">Interactive Interface</h5>
-              <p class="card-text">Antarmuka kami yang mudah digunakan memungkinkan Anda untuk memasukkan detail spesifik tentang properti yang Anda minati atau menjelajahi listing yang direkomendasikan dengan mudah.</p>
+              <p class="card-text">Antarmuka kami memungkinkan Anda untuk memasukkan detail spesifik tentang properti
+                atau menjelajahi listing yang direkomendasikan dengan mudah dan cepat.
+              </p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-5.png" class="img-fluid" alt="">
               <h5 class="card-title">Professional Guidance</h5>
-              <p class="card-text">Tim kami yang terdiri dari para profesional real estate dan ilmuwan data yang berdedikasi untuk membantu Anda di setiap langkah perjalanan pembelian atau penjualan rumah Anda.</p>
+              <p class="card-text">Tim kami yang terdiri dari para profesional real estate dan ilmuwan data yang
+                berdedikasi untuk membantu Anda di setiap langkah perjalanan pembelian atau penjualan rumah Anda.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-95">
             <div class="card-body">
               <img src="/static/images/service-6.png" class="img-fluid" alt="">
               <h5 class="card-title">Effortless Comparison</h5>
-              <p class="card-text">Bandingkan properti dengan mudah secara berdampingan, sehingga Anda dapat mengambil keputusan yang tepat dan memilih opsi terbaik untuk kebutuhan dan preferensi Anda.</p>
+              <p class="card-text">Bandingkan properti dengan mudah secara berdampingan, sehingga Anda dapat mengambil
+                keputusan yang tepat dan memilih opsi terbaik untuk kebutuhan dan preferensi Anda.</p>
             </div>
           </div>
         </div>
@@ -135,14 +184,14 @@
     </div>
     <div class="left-blur"></div>
     <div class="center-blur"></div>
-    <div class="right-blur"></div>
-  </section>  
+    <div class="center-blur-1"></div>
+  </section>
 
   <!-- HOW IT WORKS SECTION -->
   <section class="hiw" id="hiw">
     <div class="container-md">
       <div class="text-center text-white">
-        <h2>Unlocking the Mystery:<br>How Does It Work?</h2>
+        <h2>How Does It Work?</h2>
       </div>
 
       <div class="row my-5 g-5 justify-content-around align-items-center">
@@ -151,162 +200,526 @@
         </div>
 
         <div class="col-lg-6">
-        <!-- ACCORDION -->
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                <span class="badge">1</span>Masukkan Rincian
-              </button>
-            </h2>
-            <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Cukup berikan informasi dasar tentang properti yang Anda minati, seperti luas bangunan, luas tanah, jumlah kamar tidur dan jumlah kamar mandi.
+          <!-- ACCORDION -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1"
+                  aria-expanded="true" aria-controls="collapse-1">
+                  <span class="badge">1</span>Masukkan Rincian
+                </button>
+              </h2>
+              <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Cukup berikan informasi dasar tentang properti yang Anda minati, seperti luas bangunan, luas tanah,
+                  jumlah kamar tidur dan jumlah kamar mandi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                  <span class="badge">2</span>Dapatkan Prediksi
+                </button>
+              </h2>
+              <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Algoritme kami memproses data input dan menghasilkan prediksi kisaran harga properti berdasarkan data
+                  historis dan tren pasar saat ini.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                  <span class="badge">3</span>Menerima Rekomendasi
+                </button>
+              </h2>
+              <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Jelajahi rekomendasi yang dipersonalisasi yang disesuaikan dengan preferensi Anda, termasuk properti
+                  serupa, lingkungan sekitar, dan perbandingan harga.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                  <span class="badge">4</span>Persempit Pencarian Anda
+                </button>
+              </h2>
+              <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Sempurnakan kriteria pencarian Anda dan jelajahi fitur-fitur tambahan untuk menemukan rumah ideal yang
+                  sesuai dengan kebutuhan dan anggaran Anda.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                  <span class="badge">5</span>Membuat Keputusan yang Tepat
+                </button>
+              </h2>
+              <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Berbekal prediksi yang akurat dan rekomendasi yang komprehensif, buatlah keputusan yang tepat saat
+                  membeli atau menjual properti.
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                <span class="badge">2</span>Dapatkan Prediksi
-              </button>
-            </h2>
-            <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Algoritme kami memproses data input dan menghasilkan prediksi kisaran harga properti berdasarkan data historis dan tren pasar saat ini.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                <span class="badge">3</span>Menerima Rekomendasi
-              </button>
-            </h2>
-            <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Jelajahi rekomendasi yang dipersonalisasi yang disesuaikan dengan preferensi Anda, termasuk properti serupa, lingkungan sekitar, dan perbandingan harga.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                <span class="badge">4</span>Persempit Pencarian Anda
-              </button>
-            </h2>
-            <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Sempurnakan kriteria pencarian Anda dan jelajahi fitur-fitur tambahan untuk menemukan rumah ideal yang sesuai dengan kebutuhan dan anggaran Anda.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                <span class="badge">5</span>Membuat Keputusan yang Tepat
-              </button>
-            </h2>
-            <div id="collapse-5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Berbekal prediksi yang akurat dan rekomendasi yang komprehensif, buatlah keputusan yang tepat saat membeli atau menjual properti.
-              </div>
-            </div>
+
+        </div>
+      </div>
+      <!-- <div class="left2-blur"></div> -->
+  </section>
+
+  <!-- PREDICT HERO SECTION -->
+  <div class="predict" id="predict">
+    <div class="container">
+      <div class="text-center text-white">
+        <h2>Predict Now: <br>Interesting Insights Await Here!</h2>
+      </div>
+
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+        <div class="col-12 col-lg-7">
+          <div class="text">
+            <h3 class="fst-italic text-white">
+              "Selamat datang di halaman prediksi harga rumah"
+            </h3>
+            <p class="text-white">
+              Di halaman ini, Anda dapat dengan mudah dan cepat mendapatkan prediksi harga rumah Anda. Layanan ini
+              menggunakan
+              data pasar terkini dan analisis mendalam oleh tim ahli properti kami untuk memberikan prediksi yang tepat
+              dan akurat.
+              Selain mendapatkan prediksi harga rumah, PrediHouse juga memberikan beberapa rekomendasi rumah yang
+              relevan dengan data anda.
+            <p class="fst-italic text-white">
+              <b>Catatan:</b>
+            <ul class="text-white">
+              <li><i class="bi bi-check2-all"></i> Prediksi harga rumah yang dihasilkan adalah perkiraan berdasarkan
+                data pasar dan analisis kami.</li>
+              <li><i class="bi bi-check2-all"></i> Harga rumah sebenarnya mungkin berbeda karena berbagai faktor,
+                seperti kondisi pasar yang dinamis dan karakteristik rumah yang unik.</li>
+              <li><i class="bi bi-check2-all"></i> Kami sarankan Anda berkonsultasi dengan agen properti terpercaya
+                untuk mendapatkan penilaian nilai rumah yang lebih akurat.</li>
+            </ul>
+            </p>
+            </p>
           </div>
         </div>
 
+        <div class="col-lg-5 text-center text-lg-start">
+          <img src="/static/images/human-1.png" class="img-fluid" alt="">
+        </div>
       </div>
     </div>
-    <!-- <div class="left2-blur"></div> -->
+    <div class="top-blur"></div>
+  </div>
+
+  <!-- FORM PREDICTON -->
+  <section class="predict-area">
+    <div class="container">
+      <form action="/predict-area" id="form-predict" method="post" class="form-predict">
+        <div class="predict-form row justify-content-center">
+          <div class="text-center">
+            <h2>Mulai dari sini!</h2>
+          </div>
+          <div class="form-field mb-4 col-md-6">
+            <input name="lb" type="number" id="lb" class="input-text" required="required" value="{{ original_input.LB if original_input else ''}}" />
+            <label for="lb" class="label">Luas Bangunan (m²)</label>
+          </div>
+          <div class="form-field mb-4 col-md-6">
+            <input name="lt" type="number" id="lt" class="input-text" required="required" value="{{ original_input.LT if original_input else ''}}" />
+            <label for="lt" class="label">Luas Tanah (m²)</label>
+          </div>
+          <div class="form-field mb-4 col-md-6">
+            <input name="kt" type="number" id="kt" class="input-text" required="required" value="{{ original_input.KT if original_input else ''}}" />
+            <label for="kt" class="label">Jumlah Kamar Tidur</label>
+          </div>
+          <div class="form-field mb-4 col-md-6">
+            <input name="km" type="number" id="km" class="input-text" required="required" value="{{ original_input.KM if original_input else ''}}" />
+            <label for="km" class="label">Jumlah Kamar Mandi</label>
+          </div>
+          <div class="col-md-10">
+            <div class="predict-result" id="result" >
+              <center><button class="btn btn-secondary" type="submit">Prediction Now!</button></center>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="col-md-12">
+        {% if result %}
+        <div class="result text-center" >
+          <h5>your home price prediction is</h5>
+          <hr>
+          <h3>Rp {{ result }}</h3>
+        </div>
+        {% endif %}
+        
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <form action="/recommendations" method="post">
+        {% if original_input %}
+        <input type="hidden" name="lb" value="{{ original_input.LB }}">
+        <input type="hidden" name="lt" value="{{ original_input.LT }}">
+        <input type="hidden" name="kt" value="{{ original_input.KT }}">
+        <input type="hidden" name="km" value="{{ original_input.KM }}">
+        <div class="recom-result">
+          <button class="btn btn-primary" type="submit">View Recommendations?<br></button>
+          <button id="refreshButton" class="refresh btn btn-primary" type="button"><i class="fa-solid fa-rotate"></i> Refresh</button>
+        </div>
+        {% endif %}
+      </form>
+    </div>
+  </section>
+  
+  <!-- RECOMMENDATION SECTION -->
+  {% if recommendations %}
+  <section class="recom-section" id="recom">
+    <div class="container">
+      <div class="row">
+        <!-- Check if recommendations exist -->
+        <div class="col-lg-12">
+          <div class="recom-title text-center pb-3">
+            <h2>here's the best price <br>recommendation for you</h2>
+          </div>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-9 col-lg-6">
+            <img src="/static/images/human-3.png" class="img-fluid" alt="" style="height: 450px;">
+          </div>
+        <div class="recom col-lg-6">
+          <div class="accordion" id="accordion-1">
+            {% for i in range(1, 7) %}
+            <div class="accordion-item">
+              <div class="accordion-header" id="recomHeading-{{ i }}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recomCollapse-{{ i }}"
+                    aria-expanded="true" aria-controls="recomCollapse-{{ i }}">
+                    <span class="badge">{{ i }} </span>{{ recommendations[i-1].name }}
+                  </button>
+              </div>
+              <div id="recomCollapse-{{ i }}" class="accordion-collapse collapse {% if i == 1 %} show {% endif %}" aria-labelledby="recomHeading-{{ i }}"
+                data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                  <p>Harga <span>:</span> {{ recommendations[i-1].price }}</p>
+                  <p>Luas Bangunan <span>:</span> {{ recommendations[i-1].lb }} m²</p>
+                  <p>Luas Tanah <span>:</span> {{ recommendations[i-1].lt }} m²</p>
+                  <p>Kamar Tidur <span>:</span> {{ recommendations[i-1].kt }}</p>
+                  <p>Kamar Mandi <span>:</span> {{ recommendations[i-1].km }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        </div>
+        {% else %}
+        <div class="col-lg-12 text-center">
+          <p></p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
   </section>
 
   <!-- WHY CHOOSE US SECTION -->
-      <section class="wcu">
-        <div class="container py-5">
-          <h2 class="text-center">Why We're Your <br>Best Choice</h2>
-          <div class="row row-cols-1 row-cols-md-3 g-4 py-5 text-center">
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <img src="/static/images/wcu-1.png" class="img-fluid" alt="">
-                  <h5 class="card-title">Reliability</h5>
-                  <p class="card-text">Algoritme kami diuji secara ketat pada set data yang luas untuk prediksi harga yang akurat.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body card-2">
-                  <img src="/static/images/wcu-3.png" class="img-fluid" alt="">
-                  <h5 class="card-title">Transparency</h5>
-                  <p class="card-text">Kami menawarkan penjelasan terperinci prediksi, memungkinkan keputusan tepat.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body card-3">
-                  <img src="/static/images/wcu-2.png" class="img-fluid" alt="">
-                  <h5 class="card-title">Satisfaction</h5>
-                  <p class="card-text">Berdedikasi pada layanan luar biasa, kami memprioritaskan kepuasan pelanggan di real estat.</p>
-                </div>
-              </div>
+  <section class="wcu">
+    <div class="container py-5">
+      <h2 class="text-center">Why Choice <br><span><img src="../static/images/logo-3.png" class="logoo" alt=""
+            style="height: 48px; margin-top: -24px;"> PrediHouse</span>?</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5 text-center">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="/static/images/wcu-1.png" class="img-fluid" alt="">
+              <h5 class="card-title">Reliability</h5>
+              <p class="card-text">Algoritme kami diuji secara ketat pada set data yang luas untuk prediksi harga yang
+                akurat.</p>
             </div>
           </div>
         </div>
-      </section> 
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body card-2">
+              <img src="/static/images/wcu-3.png" class="img-fluid" alt="">
+              <h5 class="card-title">Transparency</h5>
+              <p class="card-text">Kami memberikan deskripsi terperinci dengan prediksi yang cukup akurat, memungkinkan keputusan tepat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body card-3">
+              <img src="/static/images/wcu-2.png" class="img-fluid" alt="">
+              <h5 class="card-title">Satisfaction</h5>
+              <p class="card-text">Berdedikasi pada layanan luar biasa, tim kami memprioritaskan kepuasan pelanggan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- FOOTER SECTION -->
-      <footer class="site-footer text-white justify-content-center" id="footer">
-       <div class="container">
+  <!-- TEAM SECTION -->
+  <section class="team" id="team">
+    <div class="container text-center py-5">
+      <h2>Our Team</h2>
+      <p class="text text-white">Introduction ByteBelles Members</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Rika.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Rika Wahyu Syaputri</h5>
+              <p class="card-divisi">ML Engineer</p>
+              <hr>
+              <p class="card-unipro">Universitas Nusantara PGRI Kediri <br><span>Teknik Informatika</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Maisie.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Maisie Yunita Malva</h5>
+              <p class="card-divisi">Front-end Developer</p>
+              <hr>
+              <p class="card-unipro">UPN "Veteran" Jawa Timur <br><span>Informatika</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Alwiyah.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Alwiyah Dwi Pratiwi</h5>
+              <p class="card-divisi">Data Engineer</p>
+              <hr>
+              <p class="card-unipro">Universitas Proklamasi 45 <br><span>Psikologi</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Fancar.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Fancar Mulia</h5>
+              <p class="card-divisi">UI/UX Designer</p>
+              <hr>
+              <p class="card-unipro">UNISKA Muhammadiyah Arsyad Al Banjari Banjarmasin <br><span>Pendidikan Kimia</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Nada.PNG" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Nada Afifah</h5>
+              <p class="card-divisi">Back-End Developer</p>
+              <hr>
+              <p class="card-unipro">Universitas PGRI Yogyakarta <br><span>Manajemen</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/Lia.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-name">Lia Rosa Damayanti</h5>
+              <p class="card-divisi">Technical Writer</p>
+              <hr>
+              <p class="card-unipro">UNISKA Muhammadiyah Arsyad Al Banjari Banjarmasin <br><span>Pendidikan Kimia</span></p>
+            </div>
+            <div class="d-flex justify-content-evenly p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container text-center py-5" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p class="text text-white">Need Help? <span>Contact Us</span></p>
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon fa fa-location-arrow"></i>
+            <div>
+              <h3>Our Address</h3>
+              <p>Jakarta Selatan,Indonesia</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="icon fa fa-envelope"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>predh@example.com</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon fa fa-phone"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>33 88 123 783</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon icon fa fa-share"></i>
+            <div>
+              <h3>Share your experience</h3>
+              <p></p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+      <form action="" method="post" role="form" class="php-email-form p-3 p-md-4">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6 class="heading">PrediHouse</h6>
-            <p class="text-justify">Dibuat dan dikembangkan dengan penuh semangat oleh tim <span>ByteBelles</span>, platform ini menawarkan wawasan yang komprehensif tentang penilaian properti dan rekomendasi yang dipersonalisasi.</p>
+          <div class="col-xl-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
           </div>
-
-          <div class="col-6 col-md-3">
-            <h6>Quick Link</h6>
-            <ul class="footer-links inline">
-              <li><a href="">Prediction</a></li>
-              <li class="about"><a href="">About us</a></li>
-              <li class="contact"><a href="">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <h6>Contact</h6>
-            <ul class="footer-links address">
-              <li class="map"><span><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</span></li>
-              <li class="phone"><span><i class="fa-solid fa-phone"></i> 33 88 123 783</span></li>
-              <li class="email"><span><i class="fa-solid fa-envelope"></i> predh@gmail.com</span></li>
-            </ul>
+          <div class="col-xl-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
           </div>
         </div>
-
-        <hr class="small">
-
-       </div>
-       <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; ByteBelles</p>
-          </div>
-
-          <div class="col-md-4 col-md-sm-6 col-12">
-            <ul class="sosmed">
-              <li><a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
         </div>
-       </div>
-      </footer>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form><!--End Contact Form -->
 
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section><!-- End Contact Section -->
 
-    <script src="/static/js/index.js"></script>
-  </body>
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer text-white justify-content-center" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <a class="logo" href="#"><img src="/static/images/logo-3.png" style="height: 35px; margin-top: -10px;">
+            PrediHouse.</a>
+          <p class="text-justify">Dibuat dan dikembangkan dengan penuh semangat oleh tim <span>ByteBelles</span>,
+            platform ini menawarkan wawasan yang komprehensif tentang penilaian properti dan rekomendasi yang
+            dipersonalisasi.</p>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Quick Link</h6>
+          <ul class="footer-links inline">
+            <li><a href="#predict">Prediction</a></li>
+            <li class="about"><a href="#about-ph">About us</a></li>
+            <li class="contact-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Contact</h6>
+          <ul class="footer-links address">
+            <li class="map"><span><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</span></li>
+            <li class="phone"><span><i class="fa-solid fa-phone"></i> 33 88 123 783</span></li>
+            <li class="email"><span><i class="fa-solid fa-envelope"></i> predh@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="small">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; ByteBelles</p>
+        </div>
+
+        <div class="col-md-4 col-md-sm-6 col-12">
+          <ul class="sosmed">
+            <li><a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/static/js/index.js"></script>
+
+  <script type="text/javascript"> 
+    window.onload = function() {
+      var result = true;
+      var recommendations = true;
+
+      {% if result %} 
+            document.getElementById('result').scrollIntoView();
+      {% endif %}
+
+      {% if recommendations %} 
+            document.getElementById('recom').scrollIntoView();
+      {% endif %}
+
+    };
+
+  </script>
+
+</body>
+
 </html>
