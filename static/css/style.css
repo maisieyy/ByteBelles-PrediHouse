@@ -39,6 +39,13 @@ body {
   background-color: #725ce3;
 }
 
+/* RESPONSIVE NAVBAR */
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-top: 50px;
+  }
+}
+
 /* =============================================== */
 
 /* HERO */
@@ -74,6 +81,10 @@ body {
   line-height: 25px;
 }
 
+.hero .text .text-white p {
+  text-align: justify;
+}
+
 .btn {
   font-weight: 600;
   padding: 12px 30px;
@@ -92,12 +103,22 @@ body {
     box-shadow: none;
   }
   &.btn-secondary {
-    background: #6844c8;
+    background: #725ce3;
+    &:hover {
+      background: #725ce3;
+    }
   }
   &.btn-white-outline {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -114,6 +135,10 @@ body {
 
   .hero .text h1 {
     font-size: 35px;
+  }
+
+  .hero .text p {
+    text-align: center;
   }
 
   .hero .img-fluid {
@@ -143,7 +168,11 @@ body {
 }
 
 .service .card {
-  background: linear-gradient(135deg, rgba(25, 19, 44, 0.833), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(25, 19, 44, 0.833),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -195,6 +224,7 @@ body {
 .service .card-body p {
   font-weight: 400;
   color: #d9d9d9;
+  text-align: justify;
 }
 
 /* RESPONSIVE MOBILE */
@@ -238,7 +268,11 @@ body {
 }
 
 .hiw .accordion-item {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -263,7 +297,11 @@ body {
   line-height: 17px;
   text-align: center;
   border-radius: 100px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -398,6 +436,24 @@ body {
   margin-top: 20px;
 }
 
+#predict::before {
+  content: "";
+  background: linear-gradient(90deg, #e29f8e, #be5adf, #725ce3);
+  filter: blur(95px);
+  width: 50vw;
+  height: 15vw;
+  min-width: 200px;
+  min-width: 200px;
+  border-radius: 100%;
+  top: 40px;
+  left: 39%;
+  width: 50px;
+  position: absolute;
+  z-index: -1;
+  margin-top: 4000px;
+  margin-left: 450px;
+}
+
 .predict .text-center h2 {
   font-weight: 600;
   font-size: 43px;
@@ -442,7 +498,11 @@ body {
 
 /* FORM PREDICTION */
 #form-predict .row {
-  background: linear-gradient(135deg, rgba(24, 18, 43, 0.759), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(24, 18, 43, 0.759),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.127);
   box-shadow: 0 8px 32px 0 rgba(9, 5, 69, 0.37);
@@ -648,8 +708,16 @@ body {
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 
+.recom-section .recom {
+  margin-top: -50px;
+}
+
 .recom .accordion-item {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -675,7 +743,11 @@ body {
   line-height: 17px;
   text-align: center;
   border-radius: 100px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -699,6 +771,28 @@ body {
 .recom .accordion-body p span {
   text-align: center;
   width: 10px;
+}
+
+.recom-section::before {
+  content: "";
+  background: linear-gradient(90deg, #e29f8e, #be5adf, #725ce3);
+  filter: blur(120px);
+  width: 50vw;
+  height: 15vw;
+  min-width: 200px;
+  min-width: 200px;
+  border-radius: 100%;
+  top: 40px;
+  left: 39%;
+  width: 50px;
+  position: absolute;
+  z-index: -1;
+  margin-top: 5790px;
+  margin-left: -350px;
+}
+
+.recom-section .img-fluid {
+  margin-top: -70px;
 }
 
 /* RESPONSIVE MOBILE */
@@ -873,13 +967,15 @@ body {
   border-radius: 15px;
   cursor: pointer;
   margin-top: 100px !important;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   color: white;
-  height: 410px !important;
-  width: 360px !important;
 }
 
 .team .card .card-divisi {
