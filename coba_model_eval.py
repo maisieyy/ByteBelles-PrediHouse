@@ -176,6 +176,7 @@ print("RMSE:", rmse)
 
 with open('xgb_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
+    
 
 new_data = np.array([[170,150,2,2]])
 predictions = loaded_model.predict(new_data)
@@ -188,7 +189,17 @@ from sklearn.preprocessing import MinMaxScaler
 X = df.drop(['NAMA RUMAH','GRS'], axis=1)
 # Normalisasi data
 scaler = MinMaxScaler()
-X_normalized = scaler.fit_transform(X)
+X_train_scaled = scaler.fit_transform(X)
+# Simpan Model
+with open('scaler.pkl', 'wb') as j:
+    pickle.dump(scaler, j)
+    
+
+X_normalized = scaler.transform(X)
+# Simpan Model
+with open('X_normalized.pkl', 'wb') as k:
+    pickle.dump(X_normalized, k)
+
 
 # Fungsi rekomendasi
 def get_recommendations(user_input, X_normalized, df,threshold=0.8,top_n=6):
